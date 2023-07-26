@@ -1,0 +1,49 @@
+{
+	"postResponse": {
+		"bookingid": 1,
+		"booking": {
+			"firstname": "PostTest",
+			"lastname": "PostUser",
+			"totalprice": 123,
+			"depositpaid": false,
+			"bookingdates": {
+				"checkin": "2025-01-01",
+				"checkout": "2025-02-01"
+			},
+			"additionalneeds": "PostNeeds"
+		}
+	},
+	"putResponse": {
+		"firstname": "PutTest",
+		"lastname": "PutUser",
+		"totalprice": 456,
+		"depositpaid": true,
+		"bookingdates": {
+			"checkin": "2026-03-02",
+			"checkout": "2026-04-03"
+		},
+		"additionalneeds": "PutNeeds"
+	},
+	"nameDatePatchResponse": {
+		"firstname": "PatchTest",
+		"lastname": "PatchUser",
+		"totalprice": 123,
+		"depositpaid": false,
+		"bookingdates": {
+			"checkin": "2026-03-02",
+			"checkout": "2026-04-03"
+		},
+		"additionalneeds": "PostNeeds"
+	},
+	"priceDepositNeedsPatchResponse": {
+    "firstname": "PostTest",
+    "lastname": "PostUser",
+    "totalprice": 456,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-01-01",
+        "checkout": "2025-02-01"
+    },
+    "additionalneeds": "PatchNeeds"
+}
+}
