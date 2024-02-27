@@ -10,6 +10,16 @@
 		},
 		"additionalneeds": "PostNeeds"
 	},
+	"postRequestWithoutOptional": {
+		"firstname": "PostTest",
+		"lastname": "PostUser",
+		"totalprice": 123,
+		"depositpaid": false,
+		"bookingdates": {
+			"checkin": "2025-01-01",
+			"checkout": "2025-02-01"
+		}
+	},
 	"putRequest": {
 		"firstname": "PutTest",
 		"lastname": "PutUser",
@@ -20,6 +30,16 @@
 			"checkout": "2026-04-03"
 		},
 		"additionalneeds": "PutNeeds"
+	},
+	"putRequestWithoutOptional": {
+		"firstname": "PutTest",
+		"lastname": "PutUser",
+		"totalprice": 456,
+		"depositpaid": true,
+		"bookingdates": {
+			"checkin": "2026-03-02",
+			"checkout": "2026-04-03"
+		}
 	},
 	"nameDatePatchRequest": {
 		"firstname": "PatchTest",
@@ -33,5 +53,22 @@
 		"totalprice": 456,
 		"depositpaid": true,
 		"additionalneeds": "PatchNeeds"
+	},
+	"patchRequestError": {
+		"firstname": "PatchTest",
+		"lastname": "PatchUser",
+		"totalprice": 456,
+		"depositpaid": true
+	},
+	"faultyDatesPostRequest": {
+		"firstname": "FaultyDatesTest",
+		"lastname": "FaultyDatesUser",
+		"totalprice": 123,
+		"depositpaid": false,
+		"bookingdates": {
+			"checkin": 123,
+			"checkout": "NaN"
+		},
+		"additionalneeds": "FaultyDatesNeeds"
 	}
 }

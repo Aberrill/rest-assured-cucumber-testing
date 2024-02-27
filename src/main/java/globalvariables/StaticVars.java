@@ -2,7 +2,7 @@ package globalvariables;
 
 public class StaticVars {
 	private static String url = "https://restful-booker.herokuapp.com";
-	private static String bookingUrl = "https://restful-booker.herokuapp.com/booking";
+	private static String bookingUrl = "https://restful-booker.herokuapp.com/booking/";
 
 	public static String getUrl() {
 		return url;

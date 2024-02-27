@@ -4,22 +4,18 @@ import io.restassured.response.Response;
 
 public class World {
 	private Response response;
-	private String bookingId;
+	private Response givenResponse;
 
 	public Response getResponse() {
 		return response;
 	}
-
 	public void setResponse(Response response) {
 		this.response = response;
 	}
-	
-
-	public String getBookingId() {
-		return bookingId;
+	public Response getCookie() {
+		return givenResponse;
 	}
-
-	public void setBookingId(String bookingId) {
-		this.bookingId = bookingId;
+	public void setCookie(Response givenResponse) {
+		this.givenResponse = givenResponse;
 	}
 }
